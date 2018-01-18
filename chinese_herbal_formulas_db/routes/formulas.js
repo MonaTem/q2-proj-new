@@ -2,7 +2,32 @@ const express = require('express');
 const router = express.Router();
 module.exports = router;
 
+
+
 const queries = require('../db/queries');
+
+const FORMULAS_URL = 'http://localhost:2000';
+
+var submitBtn = document.getElementsByTagname("submit");
+submitBtn.addEventListener('keydown', (event) => {
+    document.getElementById("radio").addEventListener("click", function(e) {
+          switch(e.target) {
+            case 'add':
+               const add = require('formulas/add/:fid');
+               routes.use('/add', add);
+               break;
+            case 'update':
+               const update = require('formulas/update/:fid');
+               routes.use('/update', update);
+               break;
+            case 'delete':
+               const erase = require('/formulas/delete/:fid');
+               routes.use('/delete', erase);
+               break;
+            default:
+          }
+     });
+   })
 
 
 router.get('/formulas', (req,res) => {
@@ -18,7 +43,7 @@ router.get('/formulas/:fid', (req, res) => {
     res.json(data);
   });
 });
-const FORMULAS_URL = 'http://localhost:2000/formulas';
+
 /*
 
 newForm.addEventListener('submit', (e) => {
