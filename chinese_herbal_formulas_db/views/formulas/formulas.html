@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chinese Herbal Formula Data Update Page</title>
+  <!-- Add site styling  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Add Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="formulas.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row justify-content-center">
+        <div class="yinyang">
+          <!--<img src="../../public/images/chinese-dragon.jpeg" height="150" width="150">-->
+          <img class="img-fluid" src="../../public/images/yinyang.png" height="50" width="50">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="heading">
+
+          <h1>Chinese Herbal Formula Update Page </h1>
+        </div>
+      </div>
+
+    </header>
+    <main>
+
+      <div class="row justify-content-center">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Data operation
+  </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="localhost:2000/formulas/add">Add</a>
+            <a class="dropdown-item" href="localhost:2000/formulas/update">Change</a>
+            <a class="dropdown-item" href="localhost:2000/formulas/delete">Delete</a>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="formulaId">Formula ID</label>
+          <input type="text" class="form-control" id="fid" placeholder="Formula id, leave blank if you don't know it">
+        </div>
+
+        <div class="form-group">
+          <label for="formulaEnglishName">Formula English name</label>
+          <input type="text" class="form-control" id="englishName" placeholder="Formula English name">
+        </div>
+        <div class="form-group">
+          <label for="formulaPinyinName">Formula Pinyin name</label>
+          <input type="text" class="form-control" id="pinyinName" placeholder="Formula Pinyin english_name">
+        </div>
+        <div class="form-group">
+          <label for="formulaBrand">Formula brand</label>
+          <input type="text" class="form-control" id="formulaBrand" placeholder="Formula brand">
+        </div>
+        <div class="form-row">
+          <div class="column">
+            <label for="formulaIngredient1">Formula ingredient 1</label>
+            <input type="text" class="form-control" id="formulaIngredient1" placeholder="Formula ingredient 1">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient2">Formula ingredient 2</label>
+            <input type="text" class="form-control" id="formulaIngredient2" placeholder="Formula ingredient 2">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient3">Formula ingredient 3</label>
+            <input type="text" class="form-control" id="formulaIngredient3" placeholder="Formula ingredient 3">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient4">Formula ingredient 4</label>
+            <input type="text" class="form-control" id="formulaIngredient4" placeholder="Formula ingredient 4">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient5">Formula ingredient 5</label>
+            <input type="text" class="form-control" id="formulaIngredient5" placeholder="Formula ingredient 5">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient6">Formula ingredient 6</label>
+            <input type="text" class="form-control" id="formulaIngredient6" placeholder="Formula ingredient 6">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient7">Formula ingredient 7</label>
+            <input type="text" class="form-control" id="formulaIngredient7" placeholder="Formula ingredient 7">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient8">Formula ingredient 8</label>
+            <input type="text" class="form-control" id="formulaIngredient8" placeholder="Formula ingredient 8">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient9">Formula ingredient 9</label>
+            <input type="text" class="form-control" id="formulaIngredient9" placeholder="Formula ingredient 9">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient10">Formula ingredient 10</label>
+            <input type="text" class="form-control" id="formulaIngredient10" placeholder="Formula ingredient 10">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient11">Formula ingredient 11</label>
+            <input type="text" class="form-control" id="formulaIngredient11" placeholder="Formula ingredient 11">
+          </div>
+          <div class="column">
+            <label for="formulaIngredient12">Formula ingredient 12</label>
+            <input type="text" class="form-control" id="formulaIngredient12" placeholder="Formula ingredient 12">
+          </div>
+        </div>
+        <!--
+<div class="column">
+<label for="formulaIngredient13">Formula ingredient 13</label>
+<input type="text" class="form-control" id="formulaIngredient13" placeholder="Formula ingredient 13">
+</div>
+<div class="column">
+<label for="formulaIngredient14">Formula ingredient 14</label>
+<input type="text" class="form-control" id="formulaIngredient14" placeholder="Formula ingredient 14">
+</div>
+<div class="column">
+<label for="formulaIngredient15">Formula ingredient 15</label>
+<input type="text" class="form-control" id="formulaIngredient15" placeholder="Formula ingredient 15">
+</div>
+<div class="column">
+<label for="formulaIngredient16">Formula ingredient 16</label>
+<input type="text" class="form-control" id="formulaIngredient16" placeholder="Formula ingredient 16">
+</div>-->
+        <div class="form-row">
+          <div class="column">
+            <label for="formulaSymptom1">Formula Symptom 1</label>
+            <input type="text" class="form-control" id="formulaSymptom1" placeholder="Formula Symptom 1">
+          </div>
+          <div class="column">
+            <label for="formulaSymptom2">Formula Symptom 2</label>
+            <input type="text" class="form-control" id="formulaSymptom2" placeholder="Formula Symptom 2">
+          </div>
+          <div class="column">
+            <label for="formulaSymptom3">Formula Symptom 3</label>
+            <input type="text" class="form-control" id="formulaSymptom3" placeholder="Formula Symptom 3">
+          </div>
+          <div class="column">
+            <label for="formulaSymptom4">Formula Symptom 4</label>
+            <input type="text" class="form-control" id="formulaSymptom4" placeholder="Formula Symptom 4">
+          </div>
+          <div class="column">
+            <label for="formulaSymptom5">Formula Symptom 5</label>
+            <input type="text" class="form-control" id="formulaSymptom5" placeholder="Formula Symptom 5">
+          </div>
+          <div class="column">
+            <label for="formulaSymptom6">Formula Symptom 6</label>
+            <input type="text" class="form-control" id="formulaSymptom6" placeholder="Formula Symptom 6">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="column">
+            <label for="formulaWarning1">Formula Warning 1</label>
+            <input type="text" class="form-control" id="formulaWarning1" placeholder="Formula warning 1">
+          </div>
+          <div class="column">
+            <label for="formulaWarning2">Formula Warning 2</label>
+            <input type="text" class="form-control" id="formulaWarning2" placeholder="Formula Warning 2">
+          </div>
+          <div class="column">
+            <label for="formulaWarning3">Formula Warning 3</label>
+            <input type="text" class="form-control" id="formulaWarning3" placeholder="Formula Warning 3">
+          </div>
+          <div class="column">
+            <label for="formulaWarning4">Formula Warning 4</label>
+            <input type="text" class="form-control" id="formulaWarning4" placeholder="Formula Warning 4">
+          </div>
+          <div class="column">
+            <label for="formulaWarning5">Formula Warning 5</label>
+            <input type="text" class="form-control" id="formulaWarning5" placeholder="Formula Warning 5">
+          </div>
+          <div class="column">
+            <label for="formulaWarning6">Formula Warning 6</label>
+            <input type="text" class="form-control" id="formulaWarning6" placeholder="Formula Warning 6">
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+    </main>
+
+  </div>
+  <!--  Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!--<script type="text/Javascript" src="../../public/Javascript/site.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+
+body {
+  background-color: #cc0000;
+  font-family: 'Macondo', cursive;
+  color: black;
+}
+
+.btn {
+  background-color: black;
+  font-family: 'Macondo', cursive;
+  color: white;
+}
+
+.btn-primary {
+  margin-top: 50px;
+}
+
+.dropdown-item {
+  background-color: black;
+  font-family: 'Macondo', cursive;
+  color: white;
+}
+
+.heading {
+  padding-top: 20px;
+}
+
+.yinyang {
+  padding-top: 50px;
+
+
+}
