@@ -20,6 +20,24 @@ const formulas = require('./routes/formulas');
 
 app.use(formulas);
 
+if (ON_FORMULAS) {
+   var submitBtn = document.getElementsByTagname("submit");
+   submitBtn.addEventListener('keydown', (event) => {
+       const keyName = event.key;
+       document.getElementById("radio").addEventListener("click", function(e) {
+          switch(e.target) {
+            case 'add':
+             break;
+            case 'change':
+             break;
+            case 'delete':
+             break;
+            default:
+          }
+     });
+   });
+}
+
 
 app.listen(Port, function() {
   console.log("Listening on port 2000");

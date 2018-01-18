@@ -24,7 +24,7 @@ const FORMULAS_URL = 'http://localhost:2000/formulas';
 newForm.addEventListener('submit', (e) => {
   e.preventDefault(); // PREVENT DEFAULT ON FORM
 
-  axios.post(`BIRDS_URL/add`, {
+  axios.post(`FORMULAS_URL/add`, {
     title: newForm.querySelector('#title').value,
     description: newForm.querySelector('#description').value
   }).then((response) => {
