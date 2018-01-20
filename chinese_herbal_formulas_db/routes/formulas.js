@@ -3,12 +3,25 @@ const router = express.Router();
 module.exports = router;
 const axios = require('axios');
 var cors = require('cors');
+const app = require("express").Router({ mergeParams: true });
 app.use(cors());
-
 
 const queries = require('../db/queries');
 
 const FORMULAS_URL = 'http://localhost:2000';
+
+/*
+  RESTful formulas
+*/
+
+const {
+  createFormula,
+  findFormulas,
+  findFormula,
+  updateFormula,
+  destroyFormula
+} = require("../models/formulas");
+
 
 var submitBtn = document.getElementsByTagname("submit");
 submitBtn.addEventListener('keydown', (event) => {

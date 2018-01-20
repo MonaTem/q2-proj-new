@@ -1,10 +1,10 @@
 const knex = require("../db");
 
 // CREATE
-function createformula({ body: { title } }) {
+function createformula({ body: { english_name } }) {
   return knex("formulas")
     .returning("*")
-    .insert({ title, });
+    .insert({ english_name, pinyin_name});
 }
 
 // Find all
@@ -13,22 +13,22 @@ function findformulas() {
 }
 
 // Find one
-function findformula({ params: { id } }) {
-  return knex("formulas").where("id", id);
+function findformula({ params: { fid } }) {
+  return knex("formulas").where("fid", fid);
 }
 
 // Update
-function updateformula({ params: { id }, body: { title, archived } }) {
+function updateformula({ params: { fid }, body: { english_name, pinyin_name } }) {
   return knex("formulas")
-    .where("id", id)
+    .where("fid", fid)
     .returning("*")
-    .update({ title, archived });
+    .update({ english_name, pinyin_name});
 }
 
 // Destroy
-function destroyformula({ params: { id } }) {
+function destroyformula({ params: { fid } }) {
   return knex("formulas")
-    .where("id", id)
+    .where("fid", fid)
     .del();
 }
 
