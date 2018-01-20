@@ -2,16 +2,17 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
-
 
 const morgan = require('morgan');
 const PORT = 2000;
 
 app.set('view engine', 'ejs');
 
+// Setup Middleware
+
 app.use(morgan('combined'));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static('public'));

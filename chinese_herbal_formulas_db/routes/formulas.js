@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 module.exports = router;
-
+const axios = require('axios');
+var cors = require('cors');
+app.use(cors());
 
 
 const queries = require('../db/queries');
